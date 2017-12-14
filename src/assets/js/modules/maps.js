@@ -1,7 +1,7 @@
 (function (win, doc, $) {
 
-    window.getLocations = function () {
-        initMap();
+     window.getLocations = function () {
+         initMap();
     };
 
     var waypts = [
@@ -9,7 +9,7 @@
             location: 'Foster Dullesdreef 40 6716 CD Ede'
         },
         {
-            location: 'Olthorst 8 40 6714 KS Ede'
+            location: 'Olthorst 8 6714 KS Ede'
         },
         {
             location: 'Jan van Schaffelaarstraat 25 3771 BR Barneveld'
@@ -104,16 +104,15 @@
         }
 
         var converted_address = [];
+        var geocoder = new google.maps.Geocoder();
 
         for(var i = 0; i < waypoints.length; i++) {
-
-            var geocoder = new google.maps.Geocoder();
 
             geocoder.geocode({
                 'address': String(waypoints[i].location)
             }, function(results, status) {
 
-                if(status == 'OK') {
+                if (status == 'OK')  {
                     converted_address.push({
                         'location': new google.maps.LatLng(
                             results[0].geometry.location.lat(),
@@ -128,7 +127,8 @@
                     }
 
                 } else {
-                    alert("Er zijn ongeldige addressen");
+                    console.log(results);
+
                 }
 
                 queue++;
