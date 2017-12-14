@@ -1,0 +1,35 @@
+{
+  "name": "tipi",
+  "homepage": "https://github.com/toolbarthomas/tipi",
+  "authors": [
+    "Thomas van der Velde <contact@toolbarthomas.net>"
+  ],
+  "description": "Modular front-end workflow core package",
+  "keywords": [
+    "toolbarthomas",
+    "modular",
+    "tipi"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "sass-cache",
+    "build/"
+  ],
+  "dependencies": {
+    "tipi.base.defaults": "^1.1.0",
+    "tipi.base.typography": "^0.3.0",
+    "tipi.base.sticky-end": "^2.0.0",
+    "tipi.base.columns": "^3.0.0",
+    "tipi.base.fluid": "^2.0.0",
+    "tipi.base.spaces": "^2.0.0",
+    "tipi.base.combined": "^1.1.0",
+    "tipi.base.element-group": "^3.0.0",
+    "tipi.base.valign": "^1.0.0",
+    "tipi.base.wrapper": "^3.0.0",
+    "tipi.base.helpers": "^1.3.0",
+    "bourbon": "^4.2.7",
+    "svg-sprite-injector": "^1.0.0",
+    "jquery": "^2.2.4"
+  }
+}
